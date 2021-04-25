@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+    </header>
+    <main>
+        <article>
+            <form action="#" method="GET">
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre y apellido"> <br><br>
+
+                <label for="correo">Email:</label>
+                <input type="email" id="correo" name="correo"> <br><br>
+
+                <label for="consulta">Consulta:</label> <br>
+                <textarea name="consulta" id="consulta" cols="30" rows="10" maxlength="10"></textarea> <br><br>
+
+                <label for="provincia">Provincia</label>
+                <select name="provincia" id="provincia" required>
+                    <option value="">Seleccione una opcion</option>
+                    <option value="1">Buenos Aires</option>
+                    <option value="2" selected>CABA</option>
+                </select> <br><br><br>
+
+                <p>Sexo:</p>
+                <input type="radio" name="sexo" value="f" id="fem">
+                <label for="fem">Femenino</label>
+                
+                <input type="radio" name="sexo" value="m" id="masc">
+                <label for="masc">Masculino</label>
+
+                <input type="radio" name="sexo" value="o" id="otro">
+                <label for="otro">Otro</label>
+                <br> <br>
+                <label for="condiciones">Acepto terminos y condiciones</label>
+                <input type="checkbox" name="condiciones" id="condiciones" checked required>
+
+                <datalist id="info">
+                    <option value="Aldo Bonzi">
+                    <option value="La Tablada">    
+                    <option value="San Justo">
+                    <option value="Ramos Mejia">
+                </datalist>
+                <input type="text" name="ciudad" id="ciudad" list="info">
+
+                <input type="submit" value="enviar">
+            </form>
+        </article>
+    </main>
+</body>
+</html>
